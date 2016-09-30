@@ -16,7 +16,9 @@ public class App2Test {
      */
     @Test
     public void testEchoMessageParameter() {
-        assertThat(new App2().printEnvironmentName(), is(nullValue()));
+        assertThat(new App2().printEnvironmentName(), is("Heroku"));
+        
+
     }
 
 }
