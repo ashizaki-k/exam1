@@ -16,6 +16,7 @@ public class App2 {
     public String printEnvironmentName() {
         // TODO: implement this method
 
+        //テスト
         if ("8080".equals(System.getProperty("dw.server.connector.port"))) {
             return "localhost";
         }
