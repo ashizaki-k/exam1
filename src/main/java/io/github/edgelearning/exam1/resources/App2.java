@@ -15,7 +15,12 @@ public class App2 {
     @Produces(MediaType.TEXT_PLAIN)
     public String printEnvironmentName() {
         // TODO: implement this method
-        return null;
+
+        if ("8080".equals(System.getProperty("dw.server.connector.port"))) {
+            return "localhost";
+        }
+
+        return "Heroku";
     }
 
 }
